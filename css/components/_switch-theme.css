@@ -1,0 +1,124 @@
+/* SWITCH TO TOGGLE DARK/LIGHT MODE*/
+    /* SWITCH */
+    .toggle-switch {
+        display: inline-block;
+        position: relative;
+        width: 60px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 15px;
+    }
+    .toggle-switch input {
+        display: none;
+    }
+
+/* SLIDER */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "\f186"; 
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 16px;
+    top: 5px;
+    left: 5px;
+    color: #333;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #333;
+}
+
+input:checked + .slider:before {
+    content: "\f185";
+    color: #fff;
+    transform: translateX(30px);
+}
+
+/* PARAMETERS FOR LIGHT/DARK MODES */        
+/* LIGHT MODE */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+    .header {
+        color: tomato;
+    } & tr:hover {
+        background-color: rgba(255, 99, 71, 0.1);
+    } & input[type="text"] {
+        background-color: #fff;
+    }
+}
+    
+/* DARK MODE */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    .header {
+        color: aquamarine;
+    } & tr:hover {
+        background-color: rgba(127, 255, 212, 0.1);
+    } & input[type="text"] {
+        background-color: #333;
+    }
+} 
+    
+/* SWITCH */
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+/* SLIDER */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "\f186"; 
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 16px;
+    top: 5px;
+    left: 5px;
+    color: #333;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #333;
+}
+
+input:checked + .slider:before {
+    content: "\f185";
+    color: #fff;
+    transform: translateX(30px);
+}
